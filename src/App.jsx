@@ -1,4 +1,4 @@
-import Landing from "./pages/Landing.jsx";
+import Landing from "./pages/LandingPage/Landing.jsx";
 function App() {
     return <Landing />;
 }
