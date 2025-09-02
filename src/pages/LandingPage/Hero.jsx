@@ -1,26 +1,38 @@
 function Hero() {
     return (
-        <>
-            <nav className="flex justify-between items-center p-2.5 bg-white text-black max-w-4xl mx-auto mt-5 rounded-2xl border-1 border-gray-200 mb-8">
-                <div className="flex space-x-2 text-2xl font-semibold">
-                    <img src="logo.png" className="h-9" alt="Logo" />
-                    HireGuard
+        <div className="px-4">
+            <nav className="flex justify-between items-center p-2.5 bg-white text-black max-w-4xl mx-auto mt-5 rounded-2xl border border-gray-200 mb-8">
+                <div className="flex-shrink-0 flex items-center space-x-2 text-2xl font-semibold">
+                    <img
+                        src="logo.png"
+                        className="h-9"
+                        alt="Logo de HireGuard"
+                    />
+                    <span>HireGuard</span>
                 </div>
-                <ul className="text-base flex space-x-4 text-gray-600 font-normal">
+                <ul className="hidden md:flex text-base space-x-4 text-gray-600 font-normal">
                     <li>
-                        <a href="#features">Features</a>
+                        <a href="#features" className="hover:text-black">
+                            Features
+                        </a>
                     </li>
                     <li>
-                        <a href="#pricing">Pricing</a>
+                        <a href="#solutions" className="hover:text-black">
+                            Solutions
+                        </a>
                     </li>
                     <li>
-                        <a href="#docs">Docs</a>
+                        <a href="#docs" className="hover:text-black">
+                            Docs
+                        </a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#pricing" className="hover:text-black">
+                            Pricing
+                        </a>
                     </li>
                 </ul>
-                <ul className="flex space-x-2">
+                <ul className="hidden md:flex items-center space-x-2">
                     <li>
                         <a
                             href="#"
@@ -38,11 +50,19 @@ function Hero() {
                         </a>
                     </li>
                 </ul>
+                <div className="md:hidden">
+                    <a
+                        href="#"
+                        className="border text-white border-black px-4 py-2 rounded-xl bg-black hover:bg-gray-700 transition"
+                    >
+                        Get Started
+                    </a>
+                </div>
             </nav>
-            <section id="hero">
-                <div className="flex flex-col items-center text-center mt-20">
+            <section id="hero" className="py-10 md:py-20">
+                <div className="flex flex-col items-center text-center">
                     <div className="max-w-2xl">
-                        <h1 className="text-6xl">
+                        <h1 className="text-4xl md:text-6xl">
                             The DevEx & Application layer for Kubernetes
                         </h1>
                         <p className="text-lg my-6 text-gray-600">
@@ -53,13 +73,13 @@ function Hero() {
                         <div className="space-x-2 text-base font-medium">
                             <a
                                 href="#"
-                                className="border text-white border-black px-5 py-2 rounded-xl bg-black hover:bg-gray-700 transition"
+                                className="inline-block border text-white border-black px-5 py-2 rounded-xl bg-black hover:bg-gray-700 transition"
                             >
                                 Get Started
                             </a>
                             <a
                                 href="#"
-                                className="border border-gray-300 px-5 py-2 rounded-xl hover:bg-gray-100 transition"
+                                className="inline-block border border-gray-300 px-5 py-2 rounded-xl hover:bg-gray-100 transition"
                             >
                                 Learn More
                             </a>
@@ -67,12 +87,18 @@ function Hero() {
                     </div>
                 </div>
                 <div className="flex justify-center p-4 mt-10">
-                    <div className="border-15 border-[#f1f1f1] rounded-2xl">
-                        <img src="assets/img/hero.png" alt="Hero" />
+                    <div className="border-[15px] border-[#f1f1f1] rounded-2xl shadow-lg">
+                        <div className="border border-gray-200 rounded-lg overflow-hidden">
+                            <img
+                                src="assets/img/hero.png"
+                                alt="Hero"
+                                className="w-full h-auto"
+                            />
+                        </div>
                     </div>
                 </div>
             </section>
-        </>
+        </div>
     );
 }
 
