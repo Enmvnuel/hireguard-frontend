@@ -1,65 +1,67 @@
 function Hero() {
     return (
         <div className="px-4">
-            <nav className="flex justify-between items-center p-2.5 bg-white text-black max-w-4xl mx-auto mt-5 rounded-2xl border border-gray-200 mb-8">
-                <div className="flex-shrink-0 flex items-center space-x-2 text-2xl font-semibold">
-                    <img
-                        src="logo.png"
-                        className="h-9"
-                        alt="Logo de HireGuard"
-                    />
-                    <span>HireGuard</span>
-                </div>
-                <ul className="hidden md:flex text-base space-x-4 text-gray-600 font-normal">
-                    <li>
-                        <a href="#features" className="hover:text-black">
-                            Features
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#solutions" className="hover:text-black">
-                            Solutions
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#docs" className="hover:text-black">
-                            Docs
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#pricing" className="hover:text-black">
-                            Pricing
-                        </a>
-                    </li>
-                </ul>
-                <ul className="hidden md:flex items-center space-x-2">
-                    <li>
-                        <a
-                            href="#"
-                            className="border border-gray-300 px-3 py-2 rounded-xl hover:bg-black hover:text-white transition"
-                        >
-                            Sign In
-                        </a>
-                    </li>
-                    <li>
+            <div className="fixed top-0 left-0 right-0 z-50 px-4">
+                <nav className="flex justify-between items-center p-2.5 bg-white text-black max-w-4xl mx-auto mt-5 rounded-2xl border border-gray-200">
+                    <div className="flex-shrink-0 flex items-center space-x-2 text-2xl font-semibold">
+                        <img
+                            src="logo.png"
+                            className="h-9"
+                            alt="Logo de HireGuard"
+                        />
+                        <span>HireGuard</span>
+                    </div>
+                    <ul className="hidden md:flex text-base space-x-4 text-gray-600 font-normal">
+                        <li>
+                            <a href="#features" className="hover:text-black">
+                                Features
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#solutions" className="hover:text-black">
+                                Solutions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#docs" className="hover:text-black">
+                                Docs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#pricing" className="hover:text-black">
+                                Pricing
+                            </a>
+                        </li>
+                    </ul>
+                    <ul className="hidden md:flex items-center space-x-2">
+                        <li>
+                            <a
+                                href="#"
+                                className="border border-gray-300 px-3 py-2 rounded-xl hover:bg-black hover:text-white transition"
+                            >
+                                Sign In
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                className="border text-white border-black px-4 py-2 rounded-xl bg-black hover:bg-gray-700 transition"
+                            >
+                                Get Started
+                            </a>
+                        </li>
+                    </ul>
+                    <div className="md:hidden">
                         <a
                             href="#"
                             className="border text-white border-black px-4 py-2 rounded-xl bg-black hover:bg-gray-700 transition"
                         >
                             Get Started
                         </a>
-                    </li>
-                </ul>
-                <div className="md:hidden">
-                    <a
-                        href="#"
-                        className="border text-white border-black px-4 py-2 rounded-xl bg-black hover:bg-gray-700 transition"
-                    >
-                        Get Started
-                    </a>
-                </div>
-            </nav>
-            <section id="hero" className="py-10 md:py-20">
+                    </div>
+                </nav>
+            </div>
+            <section id="hero" className="pt-28 md:pt-40">
                 <div className="flex flex-col items-center text-center">
                     <div className="max-w-2xl">
                         <h1 className="text-4xl md:text-6xl">
