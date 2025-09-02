@@ -1,5 +1,10 @@
+import Hero from "./Hero.jsx";
 function Landing() {
-    return <div>test</div>;
+    return (
+        <>
+            <Hero />
+        </>
+    );
 }
 
 export default Landing;
