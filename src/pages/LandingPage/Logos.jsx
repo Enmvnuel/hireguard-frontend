@@ -11,27 +11,27 @@ function Logos() {
                 <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-8 md:gap-x-14 lg:gap-x-16">
                     <img
                         className="h-8 md:h-10 w-auto text-gray-500 hover:text-black transition-colors duration-300"
-                        src="/assets/img/logos/Google.svg"
+                        src="/assets/img/logos/Google.webp"
                         alt="Google"
                     />
                     <img
                         className="h-8 md:h-10 w-auto text-gray-500 hover:text-black transition-colors duration-300"
-                        src="/assets/img/logos/Red_Hat.svg"
+                        src="/assets/img/logos/Red_Hat.webp"
                         alt="Red Hat"
                     />
                     <img
                         className="h-7 md:h-9 w-auto text-gray-500 hover:text-black transition-colors duration-300"
-                        src="/assets/img/logos/Microsoft.svg"
+                        src="/assets/img/logos/Microsoft.webp"
                         alt="Microsoft"
                     />
                     <img
                         className="h-6 md:h-8 w-auto text-gray-500 hover:text-black transition-colors duration-300"
-                        src="/assets/img/logos/Amazon.svg"
+                        src="/assets/img/logos/Amazon.webp"
                         alt="Amazon"
                     />
                     <img
                         className="h-6 md:h-8 w-auto text-gray-500 hover:text-black transition-colors duration-300"
-                        src="/assets/img/logos/Meta.svg"
+                        src="/assets/img/logos/Meta.webp"
                         alt="Meta"
                     />
                 </div>
