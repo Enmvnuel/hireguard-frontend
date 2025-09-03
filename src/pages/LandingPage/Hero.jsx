@@ -3,7 +3,7 @@ function Hero() {
         <div className="px-4">
             <div className="fixed top-0 left-0 right-0 z-50 px-4">
                 <nav className="flex justify-between items-center p-2.5 bg-white text-black max-w-4xl mx-auto mt-5 rounded-2xl border border-gray-200">
-                    <div className="flex-shrink-0 flex items-center space-x-2 text-2xl font-semibold">
+                    <div className="flex-shrink-0 flex items-center space-x-1 text-2xl font-semibold">
                         <img
                             src="logo.png"
                             className="h-9"
@@ -37,7 +37,7 @@ function Hero() {
                         <li>
                             <a
                                 href="#"
-                                className="border border-gray-300 px-3 py-2 rounded-xl hover:bg-black hover:text-white transition"
+                                className="border border-gray-300 px-3 py-2 rounded-xl hover:bg-gray-100 transition"
                             >
                                 Sign In
                             </a>
@@ -75,10 +75,26 @@ function Hero() {
                         <div className="space-x-2 text-base font-medium">
                             <a
                                 href="#"
-                                className="inline-block border text-white border-black px-5 py-2 rounded-xl bg-black hover:bg-gray-700 transition"
+                                className="inline-flex items-center border text-white border-black px-5 py-2 rounded-xl bg-black hover:bg-gray-700 transition"
                             >
                                 Get Started
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="ml-2 h-4 w-4"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M9 5l7 7-7 7"
+                                    />
+                                </svg>
                             </a>
+
                             <a
                                 href="#"
                                 className="inline-block border border-gray-300 px-5 py-2 rounded-xl hover:bg-gray-100 transition"
