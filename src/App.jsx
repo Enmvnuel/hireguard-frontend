@@ -1,4 +1,4 @@
-import Header from "./src/pages/LandingPages/Header.jsx";
+import Header from "./pages/LandingPage/Header.jsx";
 function App() {
     return (
         <>
