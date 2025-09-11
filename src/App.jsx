@@ -1,8 +1,8 @@
-import Landing from "./pages/LandingPage/Landing.jsx";
+import Header from "./src/pages/LandingPages/Header.jsx";
 function App() {
     return (
         <>
-            <Landing />
+            <Header />
         </>
     );
 }
