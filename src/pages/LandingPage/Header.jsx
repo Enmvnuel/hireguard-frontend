@@ -1,37 +1,27 @@
 import { useState } from "react";
 
+import Customers from "../../common/Customers.jsx";
+
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 py-3 lg:py-7 bg-black/80 backdrop-blur-sm border-b-2 border-gray-800">
-            <div className="max-w-6xl mx-auto px-4 flex justify-between items-center text-white">
-                {/* Logo */}
+        <nav className="fixed top-0 left-0 right-0 z-50 py-3 lg:py-5 bg-black/80 backdrop-blur-sm border-b-2 border-gray-800">
+            <div className="max-w-7xl mx-auto px-4 flex justify-between items-center text-white">
                 <h1 className="text-white text-2xl font-semibold leading-none">
                     HireGuard
                 </h1>
-
-                {/* Desktop Menu */}
                 <div className="hidden md:flex items-baseline flex-nowrap whitespace-nowrap space-x-8 text-base">
-                    <a
-                        href="#features"
-                        className="font-medium hover:text-gray-300"
-                    >
+                    <a href="#features" className=" hover:text-gray-300">
                         Product
                     </a>
-                    <a
-                        href="#resources"
-                        className="font-medium hover:text-gray-300"
-                    >
+                    <a href="#resources" className=" hover:text-gray-300">
                         Resources
                     </a>
-                    <a href="#docs" className="font-medium hover:text-gray-300">
+                    <a href="#docs" className=" hover:text-gray-300">
                         Docs
                     </a>
-                    <a
-                        href="#pricing"
-                        className="font-medium hover:text-gray-300"
-                    >
+                    <a href="#pricing" className=" hover:text-gray-300">
                         Pricing
                     </a>
                 </div>
@@ -144,8 +134,9 @@ function HeroSection() {
                 <img
                     src="https://liveblocks.io/_next/image?url=%2Fimages%2Fhomepage%2Fbackground-optimized.jpg&w=1920&q=90"
                     alt="Product preview"
-                    className="mt-12 mx-auto rounded-2xl max-w-6xl w-full"
+                    className="mt-12 mx-auto rounded-2xl max-w-7xl w-full"
                 />
+                <Customers />
             </div>
         </section>
     );
