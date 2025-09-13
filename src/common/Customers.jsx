@@ -1,8 +1,12 @@
+/**
+ * Customers component displaying logos of trusted companies
+ * TODO: Optimize by moving inline SVGs to separate files for better performance
+ */
 function Customers() {
     return (
         <>
             <div className="container mx-auto px-4 my-12">
-                <h2 className="text-center text-xl  text-[#635f5f]  mb-10">
+                <h2 className="text-center text-xl text-[#635f5f] mb-10">
                     Trusted by leading engineering, product, and design teams
                 </h2>
                 <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-8 md:gap-x-14 lg:gap-x-16 ">
