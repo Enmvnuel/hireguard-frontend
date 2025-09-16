@@ -5,7 +5,7 @@ function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                     <div className="flex items-center gap-2">
                         <img
-                            src="/src/assets/img/logo.png"
+                            src="/logo.png"
                             alt="HireGuard"
                             className="w-9 h-8"
                         />
